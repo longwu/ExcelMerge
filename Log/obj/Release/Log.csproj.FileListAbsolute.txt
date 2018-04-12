@@ -1,0 +1,9 @@
+D:\Excel合并程序\ExcelMerge\Log\bin\Release\Log.dll
+D:\Excel合并程序\ExcelMerge\Log\bin\Release\Log.pdb
+D:\Excel合并程序\ExcelMerge\Log\bin\Release\Configuration.dll
+D:\Excel合并程序\ExcelMerge\Log\bin\Release\Configuration.pdb
+D:\Excel合并程序\ExcelMerge\Log\obj\Release\Log.csprojResolveAssemblyReference.cache
+D:\Excel合并程序\ExcelMerge\Log\obj\Release\Log.csproj.CoreCompileInputs.cache
+D:\Excel合并程序\ExcelMerge\Log\obj\Release\Log.csproj.CopyComplete
+D:\Excel合并程序\ExcelMerge\Log\obj\Release\Log.dll
+D:\Excel合并程序\ExcelMerge\Log\obj\Release\Log.pdb

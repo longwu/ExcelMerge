@@ -1,0 +1,18 @@
+D:\Excel合并程序\ExcelMerge\Log\bin\Debug\Log.dll
+D:\Excel合并程序\ExcelMerge\Log\bin\Debug\Log.pdb
+D:\Excel合并程序\ExcelMerge\Log\bin\Debug\Configuration.dll
+D:\Excel合并程序\ExcelMerge\Log\bin\Debug\Configuration.pdb
+D:\Excel合并程序\ExcelMerge\Log\obj\Debug\Log.csprojResolveAssemblyReference.cache
+D:\Excel合并程序\ExcelMerge\Log\obj\Debug\Log.csproj.CoreCompileInputs.cache
+D:\Excel合并程序\ExcelMerge\Log\obj\Debug\Log.csproj.CopyComplete
+D:\Excel合并程序\ExcelMerge\Log\obj\Debug\Log.dll
+D:\Excel合并程序\ExcelMerge\Log\obj\Debug\Log.pdb
+D:\Study\My Project\ExcelMerge\Log\bin\Debug\Log.dll
+D:\Study\My Project\ExcelMerge\Log\bin\Debug\Log.pdb
+D:\Study\My Project\ExcelMerge\Log\bin\Debug\Configuration.dll
+D:\Study\My Project\ExcelMerge\Log\bin\Debug\Configuration.pdb
+D:\Study\My Project\ExcelMerge\Log\obj\Debug\Log.csprojResolveAssemblyReference.cache
+D:\Study\My Project\ExcelMerge\Log\obj\Debug\Log.csproj.CoreCompileInputs.cache
+D:\Study\My Project\ExcelMerge\Log\obj\Debug\Log.csproj.CopyComplete
+D:\Study\My Project\ExcelMerge\Log\obj\Debug\Log.dll
+D:\Study\My Project\ExcelMerge\Log\obj\Debug\Log.pdb
