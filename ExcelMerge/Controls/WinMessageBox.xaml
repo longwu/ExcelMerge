@@ -1,0 +1,21 @@
+﻿<excelMerge:DragableWindow x:Class="ExcelMerge.WinMessageBox"
+                         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                         xmlns:excelMerge="clr-namespace:ExcelMerge"
+                         Title="提示" MinHeight="180" Width="300" SizeToContent="Height" Style="{DynamicResource WindowStyle2}" Topmost="True">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock x:Name="tbkContent" TextWrapping="Wrap" VerticalAlignment="Center" Foreground="{DynamicResource WindowForeground}"  HorizontalAlignment="Center" Grid.Row="0"></TextBlock>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 0 10 0" Grid.Row="1">
+            <Button x:Name="btnClose" Height="28" Width="80" Content="关闭"/>
+        </StackPanel>
+    </Grid>
+</excelMerge:DragableWindow>
+
+
+

@@ -1,0 +1,27 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--字体颜色-->
+    <SolidColorBrush x:Key="WindowForeground">#333333</SolidColorBrush>
+    <!--字体颜色-->
+    
+    <!--窗体背景颜色-->
+    <SolidColorBrush x:Key="WindowBackground">#FFFFFFFF</SolidColorBrush>
+    <!--窗体背景颜色-->
+
+    <!--窗体标题区域字体颜色-->
+    <SolidColorBrush x:Key="MainWindowTitleForeground">#FF2e4059</SolidColorBrush>
+
+    <SolidColorBrush x:Key="WindowTitleBackground">#FFFFFFFF</SolidColorBrush>
+    <SolidColorBrush x:Key="WindowTitleForeground">#FF2e4059</SolidColorBrush>
+    <!--窗体标题区域字体颜色-->
+
+    <SolidColorBrush x:Key="ButtonBackground">#FFe7edf2</SolidColorBrush>
+    <SolidColorBrush x:Key="ButtonMouseOverBackground">#FFf0f4f6</SolidColorBrush>
+    <SolidColorBrush x:Key="ButtonPressedBackground">#ffdde3e7</SolidColorBrush>
+    <SolidColorBrush x:Key="ButtonCloseMouseOverBackground">#FFE87878</SolidColorBrush>
+
+    <!--Border颜色-->
+    <SolidColorBrush x:Key="WindowBorderBrush">#ECECEC</SolidColorBrush>
+</ResourceDictionary>
+    

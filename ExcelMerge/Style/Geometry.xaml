@@ -1,0 +1,8 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Geometry x:Key="MiniGeometry">F1M0,2L11.001,2 11.001,0 0,0z</Geometry>
+    <Geometry x:Key="MaxGeometry">F1M0,8L11,8 11,0 0,0z M1,3L10,3 10,7.001 1,7.001z</Geometry>
+    <Geometry x:Key="CloseGeometry">F1M8,0L8,1 7,1 7,2 6,2 6,3 4.999,3 4.999,2 3.999,2 3.999,1 3,1 3,0 0,0 0,1 1,1 1,2 2,2 2,3 3,3 3,5 2,5 2,6 1,6 1,7 0,7 0,8 3,8 3,7 3.999,7 3.999,6 4.999,6 4.999,5 6,5 6,6 7,6 7,7 8,7 8,8 11,8 11,7 10,7 10,6 9,6 9,5 8,5 8,3 9,3 9,2 10,2 10,1 11,1 11,0z</Geometry>
+    <Geometry x:Key="NormalGeometry">M1,4 L1,7 7,7 7,4 z M0,1.9999999 L8,1.9999999 8,8 0,8 z M3,0 L11,0 11,5 9,5 9,4.0009999 10,4.0009999 10,1.0000001 3,1.0000001 z</Geometry>
+</ResourceDictionary>
