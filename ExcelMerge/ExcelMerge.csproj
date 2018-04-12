@@ -141,11 +141,7 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>xcopy /e /y "$(TargetDir)*.*" "$(SolutionDir)Release"
-del "$(SolutionDir)Release\*.pdb"
-del "$(SolutionDir)Release\*.pdb"
-del "$(SolutionDir)Release\*.vshost.exe"
-del "$(SolutionDir)Release\*.vshost.exe.manifest"
-del "$(SolutionDir)Release\*.vshost.exe.config"</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>
