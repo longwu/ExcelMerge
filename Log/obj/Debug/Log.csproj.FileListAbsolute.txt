@@ -16,3 +16,12 @@ D:\Study\My Project\ExcelMerge\Log\obj\Debug\Log.csproj.CoreCompileInputs.cache
 D:\Study\My Project\ExcelMerge\Log\obj\Debug\Log.csproj.CopyComplete
 D:\Study\My Project\ExcelMerge\Log\obj\Debug\Log.dll
 D:\Study\My Project\ExcelMerge\Log\obj\Debug\Log.pdb
+D:\git-repositories\ExcelMerge\Log\bin\Debug\Log.dll
+D:\git-repositories\ExcelMerge\Log\bin\Debug\Log.pdb
+D:\git-repositories\ExcelMerge\Log\bin\Debug\Configuration.dll
+D:\git-repositories\ExcelMerge\Log\bin\Debug\Configuration.pdb
+D:\git-repositories\ExcelMerge\Log\obj\Debug\Log.csprojResolveAssemblyReference.cache
+D:\git-repositories\ExcelMerge\Log\obj\Debug\Log.csproj.CoreCompileInputs.cache
+D:\git-repositories\ExcelMerge\Log\obj\Debug\Log.csproj.CopyComplete
+D:\git-repositories\ExcelMerge\Log\obj\Debug\Log.dll
+D:\git-repositories\ExcelMerge\Log\obj\Debug\Log.pdb
