@@ -38,6 +38,8 @@ namespace ExcelMerge
 
         private readonly ILoopEngine engine = new LoopEngine();
 
+        private SynchronizationContext synchronizationContext = null;
+
         private static string cacheDirPath
         {
             get { return System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), Const.AppName, ".cache"); }
@@ -47,10 +49,11 @@ namespace ExcelMerge
         {
             InitializeComponent();
 
+            this.synchronizationContext = SynchronizationContext.Current;
+
             this.bdDrop.AllowDrop = true;
             this.bdDrop.Drop += GdDrag_Drop;
             this.btnMerge.Click += btnMerge_Click;
-
             this.Loaded += MainWindow_Loaded;
         }
 
@@ -63,24 +66,23 @@ namespace ExcelMerge
 
         private void Engine_OnWorking()
         {
-            if (System.Windows.Application.Current != null)
-                System.Windows.Application.Current.Dispatcher.Invoke(new System.Action(() =>
+            try
+            {
+                if (!isStarted)
+                    return;
+
+                this.synchronizationContext.Send(obj =>
                 {
-                    try
-                    {
-                        if (!isStarted)
-                            return;
+                    this.pbProgress.Value = this.finished;
+                    this.pbProgress.Maximum = this.total;
 
-                        this.pbProgress.Value = this.finished;
-                        this.pbProgress.Maximum = this.total;
-
-                        this.tbkProgress.Text = string.Format("{0}%", Math.Round((double)finished / total, 2) * 100);
-                    }
-                    catch (Exception ex)
-                    {
-                        Logger.Instance.Log(ELogLevel.Error, "MainWindow.Engine_OnWorking", ex.ToString());
-                    }
-                }), DispatcherPriority.ApplicationIdle, null);
+                    this.tbkProgress.Text = string.Format("{0}%", Math.Round((double)finished / total, 2) * 100);
+                }, null);
+            }
+            catch (Exception ex)
+            {
+                Logger.Instance.Log(ELogLevel.Error, "MainWindow.Engine_OnWorking", ex.ToString());
+            }
         }
 
         private void GdDrag_Drop(object sender, DragEventArgs e)
@@ -216,11 +218,19 @@ namespace ExcelMerge
         {
             if (File.Exists(path))
             {
-                string args = string.Format("/Select, {0}", path);
+                try
+                {
+                    string args = string.Format("/Select, {0}", path);
 
-                ProcessStartInfo pfi = new ProcessStartInfo("Explorer.exe", args);
-                pfi.UseShellExecute = false;
-                Process.Start(pfi);
+                    ProcessStartInfo pfi = new ProcessStartInfo("Explorer.exe", args);
+                    pfi.UseShellExecute = false;
+                    Process.Start(pfi);
+                }
+                catch (Exception ex)
+                {
+                    Logger.Instance.Log(ELogLevel.Error, "MainWindow.OpenFileFolder", ex.ToString());
+                    WinMessageBox.Show(ex.Message);
+                }
             }
         }
 
@@ -243,6 +253,11 @@ namespace ExcelMerge
             return path;
         }
 
+        /// <summary>
+        /// 获取有效excel文件数量
+        /// </summary>
+        /// <param name="dirPath"></param>
+        /// <returns></returns>
         private int GetAvailableExcelCount(string dirPath)
         {
             int result = 0;
