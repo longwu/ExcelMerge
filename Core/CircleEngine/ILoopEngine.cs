@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ExcelMerge
+namespace Core
 {
     /// <summary>
     /// 循环引擎接口

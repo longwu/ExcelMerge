@@ -68,8 +68,6 @@
       <SubType>Designer</SubType>
     </Page>
     <Compile Include="SingleInstance.cs" />
-    <Compile Include="Task\AsyncTask.cs" />
-    <Compile Include="Task\AsyncTaskT.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -78,9 +76,6 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="CircleEngine\ILoopEngine.cs" />
-    <Compile Include="CircleEngine\LoopEngine.cs" />
-    <Compile Include="CircleEngine\WorkingDelegate.cs" />
     <Compile Include="Controls\DragableWindow.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -130,6 +125,10 @@
     <ProjectReference Include="..\Configuration\Configuration.csproj">
       <Project>{d067dcfd-d752-417d-a47f-79ce64f1695a}</Project>
       <Name>Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Core\Core.csproj">
+      <Project>{1fde10e9-6b87-40de-8aef-199954d5928e}</Project>
+      <Name>Core</Name>
     </ProjectReference>
     <ProjectReference Include="..\Log\Log.csproj">
       <Project>{bc7c1ad6-0873-4954-b5fd-9cc2e169684a}</Project>

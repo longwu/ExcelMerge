@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading;
 
-namespace ExcelMerge
+namespace Core
 {
     /// <summary>
     /// 声明无参数委托
